@@ -63,7 +63,7 @@ def getWeather():
 def getBeijinTime():
     global K, type
     K = 1.0
-    type = ""
+    type = "20000-25000"
     hea = {'User-Agent': 'Mozilla/5.0'}
     url = r'https://apps.game.qq.com/CommArticle/app/reg/gdate.php'
     if open_get_weather == "True":
@@ -83,7 +83,7 @@ def getBeijinTime():
     else:
         print("获取北京时间失败")
         return
-    if min_1 != 20000 and max_1 != 25000:
+    if min_1 != 0 and max_1 != 0:
         user_mi = sys.argv[1]
         # 登录密码
         passwd_mi = sys.argv[2]
